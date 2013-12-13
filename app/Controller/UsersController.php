@@ -8,7 +8,7 @@ class UsersController extends AppController
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->Auth->allow('add', 'logout');
+		$this->Auth->allow('add');
 	}
 
 	public function index()
@@ -78,7 +78,7 @@ class UsersController extends AppController
   	if ($this->Auth->login()) {
   		$this->redirect($this->Auth->redirect());
   	} else {
-  		$this->Session->setFlash(__('Invalid username or password, try again'));
+  		$this->Session->setFlash(__('Inválido nome de usuário ou senha, tente novamente'));
   	}
   }
 

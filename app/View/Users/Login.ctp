@@ -2,7 +2,7 @@
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User');?>
     <fieldset>
-        <legend><?php echo __('Please enter your username and password'); ?></legend>
+        <legend><?php echo __('Por favor entre com seu usuário e senha'); ?></legend>
         <?php echo $this->Form->input('username');
         echo $this->Form->input('password');
     ?>
